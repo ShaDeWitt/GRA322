@@ -1,0 +1,160 @@
+html {
+    --rust: #911E00;
+    --yellow: #A5580D;
+    --cream: #FCF6E5;
+    --teal: #3C645B;
+    --tan: #D2A67B;
+    --brown: #3B2224;
+}
+
+
+
+header { 
+    background-image: url("E:\Graphic Design Classes\Technology Design II\Code\GRA322\Project 4 Charlie\images\all the beans.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 50vw;
+    text-align: center;
+  }
+  
+
+body{
+    background-color: var(--cream);
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    margin-bottom: 120px;
+    padding-bottom: 120px;
+}
+
+
+.container{
+    color: var(--cream);
+    font-size: 20pt;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.centered{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    color: var(--cream);
+    font-size: 47pt;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+h2{
+    color: var(--teal);
+    font-family: 'DM Serif Display', serif;
+    font-size: 37pt;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+h3{
+    color: var(--cream);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+h4{
+    color: var(--brown);
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p{
+    color: var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+    about { 
+        background-image:image(outside);
+        background-position: center center;
+        background-size: cover;
+        color:var(--cream);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        height: 614px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .centered2{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.grid{
+    display: grid;
+    grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
+}
+.grid> *{
+    grid-column: main;
+}
+
+.overview{
+    color: var(--brown);
+    padding: 4rem 0;
+}
+
+figure{ 
+    margin-top: 2rem;
+}
+
+figure img {
+    margin-bottom: 1rem;
+}
+
+figcaption{
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.sample{
+    padding:5rem 0;
+}
+
+footer{
+    background-color: var(--teal);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .two-column{
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}

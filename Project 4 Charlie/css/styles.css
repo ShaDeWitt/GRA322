@@ -10,11 +10,14 @@ html {
 
 
 header { 
-    background-image: url("E:\Graphic Design Classes\Technology Design II\Code\GRA322\Project 4 Charlie\images\all the beans.jpg");
+    background-image: url('../images/all\ the\ beans.jpg');
     background-position: center center;
     background-size: cover;
-    height: 50vw;
+    display:grid;
+    align-items: center;
+    height: 50vh;
     text-align: center;
+    z-index: 1;
   }
   
 
@@ -47,35 +50,40 @@ h1{
     font-size: 47pt;
     font-weight: 500;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 h2{
     color: var(--teal);
+    border-bottom: 2px solid var(--yellow);
     font-family: 'DM Serif Display', serif;
     font-size: 37pt;
     font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 h3{
     color: var(--cream);
     font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
+    font-size: 20pt;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 h4{
     color: var(--brown);
     font-family: 'DM Serif Display', serif;
-    font-size: 20px;
+    font-size: 20pt;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 p{
@@ -86,29 +94,41 @@ p{
     letter-spacing: 2px;
     line-height: 1.5;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
-    about { 
-        background-image:image(outside);
-        background-position: center center;
-        background-size: cover;
-        color:var(--cream);
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        height: 614px;
-        letter-spacing: 2px;
-        line-height: 1.5;
-        text-align: left;
-        margin-bottom: 1rem;
-    }
+.gallery-item {
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+  }
 
-    .centered2{
-        position:absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.caption {
+    background: rgba(red, green, blue, alpha) (0,0,0,.5);
+    background-image: url('../images/outside.jpg');
+    color: var(--cream);
+    position: absolute;
+    min-height: 614;
+    max-height: 673;
+    padding-top: 46%;
+    top: 0;
+    text-align: left;
+    width: 50%;
+}
+    
+.diamond-outline{
+    align-items: center center;
+    background-image: url('../images/outline_diamond.png');
+    background-position: center center;
+    object-fit:cover;
+    z-index: 2;
+}
+
+.diamond{
+    background-image: url('../images/diamond.png');
+    background-position: relative;
+    left: 50%;
+}
 
 .grid{
     display: grid;
@@ -120,36 +140,51 @@ p{
 
 .overview{
     color: var(--brown);
-    padding: 4rem 0;
+    padding: 4rm 0;
 }
+
+.myimage{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    padding: 0  0 30px
+  }
 
 figure{ 
     margin-top: 2rem;
 }
 
-figure img {
-    margin-bottom: 1rem;
-}
-
-figcaption{
-    font-size: 13px;
-    font-style: italic;
-    letter-spacing: 1px;
-}
-
-.sample{
-    padding:5rem 0;
-}
-
 footer{
+    align-items: center;
     background-color: var(--teal);
-    padding: 1.5rem 0;
+    background-position: center center;
+    range: url('../images/icon.png');
+    margin-bottom: 0;
+    padding: 2rem;
     text-align: center;
 }
 
-footer p{
-    margin-bottom: 0;
-}
+.table {
+    color: var(--brown);
+    border-radius: 0.4em;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    min-width: 300px;
+    width: 100%;
+    }
+
+    td {
+        font-family: 'Noto Sans', sans-serif;
+        padding: 1rem;
+      }
+      
+      th{
+        color: var(--brown);
+        font-family: 'Noto Sans', sans-serif;
+        padding: 1rem;
+        text-align: left;
+      }
+
 
 @media screen and (min-width: 800px) {
     .two-column{
@@ -157,4 +192,4 @@ footer p{
         grid-gap: 3rem;
         grid-template-columns: 1fr 1fr;
     }
-}
+}    

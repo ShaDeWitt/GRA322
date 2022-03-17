@@ -10,7 +10,7 @@ html {
 
 
 header { 
-    background-image: url('../images/all\ the\ beans.jpg');
+    background-image: url('../images/beans.jpg');
     background-position: center center;
     background-size: cover;
     display:grid;
@@ -39,7 +39,7 @@ h1{
 }
 
 h2{
-    color: var(--cream);
+    color: var(--yellow);
     font-family: 'DM Serif Display', serif;
     font-size: 37pt;
     font-weight: 500;
@@ -68,6 +68,7 @@ h4{
     letter-spacing: 2px;
     line-height: 1.5;
     margin-bottom: 1rem;
+    padding: 1rem;
     text-align: left;
 }
 
@@ -106,7 +107,7 @@ h7{
 p{
     color: var(--brown);
     font-family: 'Noto Sans', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
@@ -114,15 +115,11 @@ p{
     text-align: left;
 }
 
-.gallery-item {
-    position: relative;
-    width: 100vw;
-  }
-
 .caption {
     color: var(--cream);
     display: flex;
     position: absolute;
+    margin: 0;
     min-height: 614;
     max-height: 673;
     padding-top: 46%;
@@ -140,27 +137,33 @@ p{
     text-align: center;
 }
 
-
-.centered{
+    
+.diamond-outline {
+    margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-    
-.diamond-outline{
-    align-items: center center;
-    background-image: url('../images/outline_diamond.png');
-    background-position: center center;
-    object-fit:cover;
-    z-index: 2;
+    transform: translateY(-50%);
 }
 
 .diamond{
-    background-image: url('../images/diamond.png');
-    background-position: relative;
+    background-position: absolute;
+    margin: 0;
     position: absolute;
+    transform: translateY(-50%);
 }
+
+footer{
+    align-items: center;
+    background-color: var(--teal);
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery-item {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+  }
 
 .grid{
     display: grid;
@@ -170,37 +173,25 @@ p{
     grid-column: main;
 }
 
+.myimage{
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    object-fit:cover;
+    padding: 30px 30px 30px 60px;
+    position: flex;
+  }
+
 .overview{
     color: var(--brown);
     padding: 4rm 0;
-}
-
-.myimage{
-    width:300px;
-    height:300px;
-    object-fit:cover;
-    padding: 0  0 30px
-  }
-
-figure{ 
-    margin-top: 2rem;
-}
-
-footer{
-    align-items: center;
-    background-color: var(--teal);
-    background-position: center center;
-    range: url('../images/icon.png');
-    margin-bottom: 0;
-    padding: 2rem;
-    text-align: center;
 }
 
 .table {
     color: var(--brown);
     border-radius: 0.4em;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
@@ -211,11 +202,13 @@ footer{
 
     td {
         font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;
         padding: 1rem;
       }
       
       th{
         font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;
         padding: 1rem;
       }
 

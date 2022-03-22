@@ -10,7 +10,7 @@ html {
 
 
 header { 
-    background-image: url('../images/beans.jpg');
+    background-image: url(../images/beans.jpg);
     background-position: center center;
     background-size: cover;
     display:grid;
@@ -31,21 +31,28 @@ body{
 
 
 h1{
+    background-image: url(../images/outline.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     color: var(--cream);
     font-size: 47pt;
     font-weight: 500;
     letter-spacing: 1px;
     text-align: center;
+    padding: 3.5rem;
 }
 
 h2{
-    color: var(--yellow);
+    color: var(--cream);
     font-family: 'DM Serif Display', serif;
     font-size: 37pt;
     font-weight: 500;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
     text-align: center;
+    background-image: url(../images/diamond.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 5.5rem;
 }
 
 h3{
@@ -68,8 +75,11 @@ h4{
     letter-spacing: 2px;
     line-height: 1.5;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 3.5rem;
     text-align: left;
+    background-image: url(../images/outside.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 h5{
@@ -115,26 +125,19 @@ p{
     text-align: left;
 }
 
-.caption {
-    color: var(--cream);
-    display: flex;
-    position: absolute;
-    margin: 0;
-    min-height: 614;
-    max-height: 673;
-    padding-top: 46%;
-    top: 0;
-    text-align: left;
-    width: 50%;
-    align-items: center;
-}
-
 .container{
+    align-items: center;
     color: var(--cream);
+    position: absolute;
     font-size: 20pt;
     font-weight: 400;
     letter-spacing: 1px;
-    text-align: center;
+    min-height: 614;
+    max-height: 673;
+    margin: 0;
+    text-align: left;
+    height: 100%;
+    width: 50%;
 }
 
     

@@ -7,20 +7,17 @@ html {
     --brown: #3B2224;
 }
 
-
-
 header { 
+    align-items: center;
     background-image: url(../images/beans.jpg);
     background-position: center center;
     background-size: cover;
     display:grid;
-    align-items: center;
     height: 90vh;
     text-align: center;
     z-index: 1;
   }
   
-
 body{
     background-color: var(--cream);
     font-family: 'DM Serif Display', serif;
@@ -28,7 +25,6 @@ body{
     margin-bottom: 120px;
     padding-bottom: 120px;
 }
-
 
 h1{
     background-image: url(../images/outline.png);

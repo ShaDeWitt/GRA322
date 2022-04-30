@@ -10,7 +10,7 @@ header {
   background-position: center center;
   background-size: cover;
   display:grid;
-  height: 90vh;
+  height: 60vh;
   text-align: center;
   z-index: 1;
   }
@@ -88,7 +88,7 @@ body{
     align-items: center;
     background-color: var(--terracotta);
     padding: 1rem;
-    padding-left: 4.5rem;
+    padding-left: -2rem;
     text-align: center;
   }
 

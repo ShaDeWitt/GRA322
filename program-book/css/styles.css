@@ -3,7 +3,6 @@ html {
     --terracotta: #A54C24;
     --pink: #d08766;
     --baby: #fdddcf;
-    --base: #fff8f5;
 }
 
 header { 
@@ -17,22 +16,9 @@ header {
   }
   
 body{
-    background-color: var(--base);
     font-family: 'Noto sans', sans-serif;
     font-weight: 300;
-    margin-bottom: 120px;
-    padding-bottom: 120px;
     text-align: left;
-}
-
-.my-button{
-    background-image: url(../images/button.png);
-    background-position: absolute;
-    color: var(--base);
-    font-family: 'Noto sans', sans-serif;
-    margin: 0;
-    padding: 2rem;
-    position: absolute;
 }
 
     h1{
@@ -41,8 +27,9 @@ body{
         color: var(--rust);
         font-size: 24pt;
         font-weight: bold;
-        letter-spacing: 1px;
-        padding: 3.5rem;
+        letter-spacing: 2px;
+        padding-left: 5.5rem;
+        padding-top: 20px;
         text-align: left;
     }
 
@@ -53,7 +40,7 @@ body{
         letter-spacing: 2px;
         background-repeat: no-repeat;
         background-position: center center;
-        padding: 5.5rem;
+        padding-left: 5.5rem;
         text-align: left;
     }
 
@@ -63,6 +50,7 @@ body{
         font-weight: regular;
         letter-spacing: 2px;
         margin-bottom: 1rem;
+        padding-left:5.5rem;
         text-align: left;
     }
 
@@ -74,9 +62,7 @@ body{
         letter-spacing: 2px;
         line-height: 1.5;
         margin-bottom: 1rem;
-        padding: 3.5rem;
-        background-repeat: no-repeat;
-        background-position: center center;
+        padding-left: 5.5rem;
         text-align: left;
     }
 
@@ -86,6 +72,9 @@ body{
         letter-spacing: 2px;
         margin-bottom: 1rem;
         text-align: left;
+        max-width: 300px;
+        padding-left:5.5rem;
+        padding-top: 50px;
     }
 
     .grid{
@@ -99,30 +88,102 @@ body{
     footer{
         align-items: center;
         background-color: var(--terracotta);
-        padding: 2rem;
+        padding: 1rem;
         text-align: center;
     }
-
-    .navcover { 
-        align-items: center;
-        background-image: url(../images/insidecover.png);
-        background-position: center center;
-        background-size: cover;
-        display:grid;
-        height: 90vh;
-        text-align: center;
-        z-index: 1;
-      }
 
     .overview-grid{
         padding: 4rem 0 4rem;
     }
 
-    @media screen and (min-width: 800px) {
-        .two-column{
-            align-items: start;
-            display: grid;
-            grid-gap: 3rem;
-            grid-template-columns: 1fr 1fr;
+    /**from here**/
+    
+    * {
+        box-sizing: border-box;
+      }
+      
+      ul {
+        list-style-type: none;
+        padding-top: 20px;
+        padding-bottom: 5.5rem;
+      }
+      
+      nav ul a {
+        text-decoration: none;
+        padding-bottom: 5.5rem;
+      }
+      
+      nav ul li a {
+        list-style: none;
+        padding-top: 20px;
+        padding-bottom: 5.5rem;
+      }
+    
+      
+      img {
+        padding-top: 20px;
+        max-width: 100%;
+      }
+      
+      .home {
+        padding: 2rem;
+        margin-left: 3rem;
+      }
+      
+      .home-images {
+        display: grid;
+        gap: 30px;
+      }
+      
+      .final-project {
+        padding-top: 100px;
+        margin: 0 auto;
+        max-width: 1280px;
+      }
+      
+      .final {
+        display: grid;
+      }
+      
+      @media screen and (min-width: 768px) {
+        .home {
+          display: grid;
+          grid-template-columns: 3fr 4fr;
+          margin: 5rem;
         }
-    }    
+        .home-images {
+          grid-template-columns: 1fr;
+        }
+        .final-image {
+          display: grid;
+          grid-template-columns: 3fr 4fr;
+          margin: 5rem;
+        }
+        .final {
+          grid-template-columns: 1fr;
+        }
+        .subtitle {
+          max-width: 210px;
+        }
+      }
+      
+      @media screen and (min-width: 1400px) {
+        .home {
+          display: grid;
+          grid-template-columns: 1fr 4fr 1fr;
+        }
+        .home-images {
+          grid-template-columns: 1fr 1fr;
+        }
+        .final-image {
+          display: grid;
+          grid-template-columns: 2fr 4fr 1fr;
+        }
+        .final {
+          grid-template-columns: 1fr;
+        }
+        .subtitle {
+          max-width: 250px;
+        }
+      }
+      

@@ -163,7 +163,7 @@ body{
         grid-template-columns: 1fr;
       }
       .subtitle {
-        max-width: 210px;
+        max-width: 50%;
       }
 
       .two-column{
@@ -191,7 +191,7 @@ body{
         grid-template-columns: 1fr;
       }
       .subtitle {
-        max-width: 250px;
+        max-width: 50%;
       }
     }
       

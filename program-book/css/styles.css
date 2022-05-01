@@ -80,6 +80,7 @@ body{
     display: grid;
     grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
   }
+  
   .grid> *{
       grid-column: main;
   }
@@ -107,6 +108,7 @@ body{
     }
     
     img {
+      align-items: center;
       padding-top: 20px;
       max-width: 100%;
     }
@@ -132,6 +134,17 @@ body{
       padding-bottom: 4.5rem;
     }
     
+    table {
+      display:grid;
+      padding-left: 4.5rem;
+      min-width: 100%;
+    }
+      
+      td {
+        min-width: 133px;
+        padding-right: 2rem;
+      }
+    
     @media screen and (min-width: 768px) {
       .home {
         display: grid;
@@ -152,7 +165,15 @@ body{
       .subtitle {
         max-width: 210px;
       }
+
+      .two-column{
+        align-items: start;
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+      }
     }
+      
     
     @media screen and (min-width: 1400px) {
       .home {
